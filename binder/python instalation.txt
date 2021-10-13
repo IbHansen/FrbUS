@@ -1,0 +1,23 @@
+conda create -n mf python=3.8  modelflow --override-channels --strict-channel-priority  -c ibh -c default -c conda-forge 
+conda create -n mf --override-channels --strict-channel-priority  -c ibh -c default -c conda-forge  modelflow notebook==6.1.1 -y
+conda activate mf 
+conda install "nbconvert=5.6.1" --y
+conda install pip 
+conda install -c conda-forge/label/cf202003 jupyter_contrib_nbextensions
+pip install dash_interactive_graphviz
+jupyter nbextension enable hide_input_all/main
+jupyter nbextension enable splitcell/splitcell
+conda create -n mf --override-channels --strict-channel-priority  -c ibh -c default -c conda-forge/label/cf202003 modelflow nbconvert=5.6.1 notebook==6.1.1 -y
+conda create -n mf2 -c ibh -c default -c conda-forge modelflow -y
+conda install -c conda-forge/label/cf202003 jupyter_contrib_nbextensions --freeze-installed
+
+https://docs.conda.io/en/latest/miniconda.html to download the latest version 3.9 
+open the file to start instalation 
+asked to install for: select just me
+in the start menu: select anaconda promth 
+
+
+conda create -n mf2 -c ibh -c  conda-forge modelflow -y 
+conda  install  -c ibh -c  conda-forge modelflow -y 
+conda activate mf2 
+jupyter contrib nbextension install --user
