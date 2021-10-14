@@ -1,6 +1,6 @@
 name: base
 channels:
-  - ibh
+  - ibh  
 dependencies:
   - python=3.8
   - modelflow=1.13
