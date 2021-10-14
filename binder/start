@@ -1,3 +1,4 @@
 #!/bin/bash
 jupyter nbextension enable toc2/main
+mv modelsource/ibscache modelsource/__pycache__
 exec "$@"
