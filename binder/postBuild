@@ -1,13 +1,8 @@
 #!/bin/bash 
-jupyter trust "Asia/Carbon tax experiments.ipynb"
-jupyter trust "Asia/Impact of global carbon tax rates with revenue channelled back into the economy.ipynb"
-jupyter trust "Asia/Overview.ipynb"
-jupyter trust "Asia/Set carbon emission targets.ipynb"
-jupyter trust "Asia/Set relative carbon emission targets.ipynb"
-jupyter trust "Asia/Additional material/Asia logical structure.ipynb"
-jupyter trust "Asia/Additional material/Asia run model.ipynb"
+jupyter trust "FRBUS - example - VAR.ipynb"
+jupyter trust "FRBUS model consistent expectations.ipynb"
+jupyter trust "FRBUS.ipynb"
 jupyter nbextension enable hide_input_all/main
 jupyter nbextension enable splitcell/splitcell
 python frbus-run-numba.py
-#     mv modelsource/__pycache__ modelsource/ibscache
 exec "$@"
