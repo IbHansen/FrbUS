@@ -98,8 +98,8 @@ mfrbus_var_res = model(var_res_frml,modelname = f'{MODELNAME} VAR version calcul
 
 mce_frml_unnormalized =   mp.un_normalize_simpel(mce_frml)
 
-mfrbus_mce = model(mce_frml, straight = True ,modelname = f'{MODELNAME} MCE version un-normalized')
-mfrbus_mce_un = model(mce_frml_unnormalized, straight = True ,modelname = f'{MODELNAME} MCE version')
+mfrbus_mce = model(mce_frml, straight = True ,modelname = f'{MODELNAME} MCE version normalized')
+mfrbus_mce_un = model(mce_frml_unnormalized, straight = True ,modelname = f'{MODELNAME} MCE un-normalized')
 mfrbus_mce_res = model(mce_res_frml,modelname = f'{MODELNAME} VAR version calculation of residuals')
 #%% enrich with descriptions 
 for mfrbus in [mfrbus_var,mfrbus_mce, mfrbus_mce_un,  mfrbus_var_res, mfrbus_mce_res  ] :
