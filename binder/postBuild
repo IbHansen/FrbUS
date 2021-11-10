@@ -3,6 +3,6 @@ jupyter trust "FRBUS - example - VAR.ipynb"
 jupyter trust "FRBUS model consistent expectations.ipynb"
 jupyter trust "FRBUS.ipynb"
 jupyter nbextension enable hide_input_all/main
-jupyter nbextension enable splitcell/splitcell
-# python model_run_numba.py models/frbus_var.pcim 
+jupyter nbextension enable splitcell/splitcell 
+python model_run_numba.py models/frbus_var.pcim 
 exec "$@"
