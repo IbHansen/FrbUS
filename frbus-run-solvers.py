@@ -46,16 +46,16 @@ first_test = 5
 max_iterations = 1000
 timeon=0
 relconv = 0.00000001
-turbo=1   # if we want to compile with numba 
-newton_reset = 0
-transpile_reset=0
+turbo=0   # if we want to compile with numba 
+newton_reset = 1
+transpile_reset=1
 stringjit=1
 chunk = 25
 
+#%%
 
 mfrbus_var.keep_solutions={}
 mfrbus_var.keep_solutions['Baseline'] = basedf_var
-
 for solver in ['sim','sim1d','newton','newtonstack']:  
 # for solver in ['newton']:   #,'newtonstack']:
     with model.timer(f'Solve with:{solver:26}',short=True)  as t:
